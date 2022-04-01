@@ -1,0 +1,464 @@
+$pc: 750px;
+
+// @mixin pc {
+//     @media (min-width:($pc)) {
+//         @content;
+//     }
+// }
+
+@function rem($value){
+    @return ($value/16)+rem;
+}
+
+@mixin pc {
+    @media (min-width:$pc){
+        @content;
+    }
+}
+
+
+body{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+img{
+    width: 100%;
+}
+
+.inner{
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+
+    @include pc {
+        width: 70%;
+        max-width: 1920px;
+        margin: auto;
+    }
+}
+
+// header
+.header{
+    &__top{
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__main{
+        width: 100%;
+        text-align: center;
+        background-color: #F0841A;
+        margin: auto;
+        padding: 1em;
+        @include pc {
+            padding: (32/16)+em;
+        }
+    }
+
+    &__title{
+        font-size: rem(30);
+        @include pc {
+           font-size: rem(60); 
+        }
+    }
+
+    &__color{
+        color: #FFD08A;
+    }
+}
+
+
+// main
+.main{
+    margin-top: (30em/16);
+
+    &__title{
+        font-size:rem(20);
+        text-align: center;
+        color: #F0841A;
+        @include pc {
+            font-size: rem(25);
+        }
+    }
+
+    &__content{
+        margin-bottom: (50em/16);   
+        @include pc {
+            margin-bottom: (100/16)+em;
+        }   
+    }
+}
+
+.works{
+    text-align: center;
+    &__title{
+        font-size: rem(20);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+        @include pc {
+            font-size: rem(22);
+        }
+    }
+
+    &__content{
+        display: inline-block;
+        text-decoration: none;
+        color: #FFD08A ;
+        font-weight: initial;
+        margin-top: (20em/16);
+        margin-right: auto;
+        margin-left: auto;
+        @include pc {
+            width: 40%;
+            margin-bottom: (20/16)+em;
+        }
+    }
+
+    &__main{
+        position: relative;
+        background-color: #000;
+        display: inline-block;
+        border-radius: 20px;
+    }
+
+    &__img{
+        opacity: 0.7;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 10px 10px 0px 0px rgba($color: #FFD08A, $alpha: 0.6);
+    }
+
+    &__flex{
+        @include pc {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+}
+
+// BLOG
+
+
+// Web Design
+
+
+// Shopping List
+
+
+// Slide Show
+
+// btn
+.btn{
+    display: block;
+    margin-top: (32/16)+em;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #333333;
+    padding: (10em/16) (50em/16);
+    border: 2px solid #4CACB9;
+    border-radius: 10px;
+}
+
+// sub
+
+.sub{
+    text-align: center;
+
+    &__title{
+        font-size: rem(20);
+        color: #F0841A;
+    }
+}
+
+.skill{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: (50/16)+em;
+    @include pc {
+        display: none;
+    }
+    &__main{
+        margin-top: (20/16)+em;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: (20/16)+em;
+        border: #4CACB9 2px solid;
+        border-radius: 10px;
+        @include pc {
+            display: block;
+        }
+    }
+
+    &__text{
+        font-weight: normal;
+        font-size: rem(16);
+        margin-bottom: (10/16)+em;
+        @include pc {
+            margin-bottom: 0;
+            font-size: rem(20);
+        }
+    }
+
+    &__text:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+
+.pc{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: (80/16)+em;
+    display: none;
+    @include pc {
+        display: block;
+    }
+    &__skill{
+        margin-top: (20/16)+em;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: (20/16)+em;
+        border: #4CACB9 2px solid;
+        border-radius: 10px;
+        @include pc {
+            display: block;
+        }
+    }
+
+    &__text{
+        font-weight: normal;
+        font-size: rem(16);
+        margin-bottom: (10/16)+em;
+        @include pc {
+            margin-bottom: 0;
+            font-size: rem(20);
+        }
+    }
+
+    &__text:last-child{
+        margin-bottom: 0;
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
+// about
+
+.about{
+    &__title{
+        font-size: rem(20);
+        color: #F0841A;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    &__img{
+        width: 50%;
+        margin: 0 auto;
+        @include pc {
+            width: 20%;
+            margin-right: -2em;
+        }
+    }
+
+    &__main{
+        width: 100%;
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+}
+
+.profile{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 6em;
+    @include pc {
+        width: 30%;
+        margin-top: 0;
+    }
+    &__title{
+        font-size: rem(24);
+        padding-bottom: 0.3em;
+        border-bottom: #4CACB9 4px solid;
+        margin-bottom: 1.2em;
+    }
+
+    &__main{
+        text-align: center;
+    }
+
+    &__name{
+        font-size: rem(16);
+    }
+
+    &__text{
+        font-size: rem(13);
+        padding-left: 3.5em;
+    }
+
+    &__flex{
+        width: 100%;
+        display: flex;
+        margin-top: 0.5em;
+    }
+
+    &__about{
+        margin-top: 2em;
+        text-align: left;
+        margin-bottom: 3em;
+    }
+
+    &__p{
+        line-height: 1.7;
+    }
+}
+
+// footer
+.footer{
+    background-color: #F0841A;
+    color: #333;
+    text-align: center;
+    padding-top: (2/16)+em;
+    padding-bottom: (2/16)+em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+// title
+.title{
+    font-size: rem(20);
+    color: #F0841A;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+// WORK
+.work{
+    margin-top: 2em;
+    &__detail{
+        margin-top: (20px/16px)+em;
+        background-color: #FDEFCD;
+        border-radius: 20px;
+        padding: 2em;
+        box-shadow: #4CACB9 -10px -10px;
+        @include pc {
+            padding: 2em;
+            width: 40%;
+        }
+    }
+
+    &__img{
+        @include pc {
+            width: 50%;
+        }
+    }
+
+    &__box{
+        @include pc {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+    &__flex{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    &__category{
+        font-size: rem(12);
+        width: 60px;
+        @include pc {
+            width: 70px;
+        }
+    }
+
+    &__title{
+        font-size: rem(20);
+        margin-top: 0.2em;
+        margin-left: 0.5em;
+    }
+
+    &__period{
+        font-size: rem(13);
+        margin-top: 0.2em;
+        margin-left: 0.5em;
+    }
+
+    &__techno{
+        font-size: rem(12);
+        margin-top: 0.2em;
+        margin-left: 0.5em;
+    }
+
+    &__intention{
+        margin-top: (40px/16px)+em;
+    }
+
+    &__text{
+        margin-bottom: (20px/16px)+em;
+        @include pc {
+            margin-right: 2em;
+            margin-left: 2em;
+        }
+    }
+
+    &__code{
+        margin-bottom: (20px/16px)+em;
+    }
+
+    &__back{
+        display: block;
+        margin-bottom: 2em;
+        text-decoration: none;
+        color: #000;
+        &:before{
+                content: "";
+                display: inline-block;
+                border: 2px solid #4CACB9;
+                margin-bottom: 4px;
+                margin-right: 0.2em;
+                width: 1em;
+        }
+        &:after{
+                content: "";
+                display: inline-block;
+                border: 2px solid #4CACB9;
+                margin-bottom: 4px;
+                margin-left: 0.2em;
+                width: 1em;
+        }
+    }
+}
