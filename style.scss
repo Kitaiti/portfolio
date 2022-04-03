@@ -405,6 +405,7 @@ img{
     }
 
     &__img{
+        width: 100%;
         @include pc {
             width: 47%;
         }
@@ -460,16 +461,16 @@ img{
 
     &__code{
         @include pc {
-            margin-right: 2em;
-            margin-left: 2em;
+            margin-right: 3em;
+            margin-left: 3em;
         }
     }
 
     &__text{
         margin-bottom: (20px/16px)+em;
         @include pc {
-            margin-right: 2em;
-            margin-left: 2em;
+            margin-right: 3em;
+            margin-left: 3em;
         }
     }
 
@@ -484,7 +485,7 @@ img{
         color: #F0841A;
         font-weight: bold;
         @include pc {
-            margin-left: 2em;
+            margin-left: 3em;
         }
         &:before{
                 content: "";

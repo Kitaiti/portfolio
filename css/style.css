@@ -455,6 +455,10 @@ img {
   font-weight: bold;
 }
 
+.work__img {
+  width: 100%;
+}
+
 @media (min-width: 750px) {
   .work__img {
     width: 47%;
@@ -534,8 +538,8 @@ img {
 
 @media (min-width: 750px) {
   .work__code {
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
   }
 }
 
@@ -545,8 +549,8 @@ img {
 
 @media (min-width: 750px) {
   .work__text {
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
   }
 }
 
@@ -564,7 +568,7 @@ img {
 
 @media (min-width: 750px) {
   .work__back {
-    margin-left: 2em;
+    margin-left: 3em;
   }
 }
 
