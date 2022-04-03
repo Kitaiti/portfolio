@@ -28,12 +28,12 @@ img{
 }
 
 .inner{
-    width: 80%;
+    width: 70%;
     max-width: 450px;
     margin: auto;
 
     @include pc {
-        width: 70%;
+        width: 80%;
         max-width: 1920px;
         margin: auto;
     }
@@ -372,14 +372,41 @@ img{
         padding: 2em;
         box-shadow: #4CACB9 -10px -10px;
         @include pc {
-            padding: 2em;
-            width: 40%;
+            padding: 1.2em;
+            width: 44%;
         }
+    }
+
+    &__link{
+        margin-top: (15px/16px)+em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__page{
+        border: 2px solid #4CACB9;
+        padding: 0.5em;
+        border-radius: 7px;
+    }
+
+    &__here{
+        text-decoration: none;
+        font-size: rem(13);
+        color: #333;
+        font-weight: bold;
+    }
+
+    &__git{
+        text-decoration: none;
+        font-size: rem(13);
+        color: #333;
+        font-weight: bold;
     }
 
     &__img{
         @include pc {
-            width: 50%;
+            width: 47%;
         }
     }
 
@@ -395,6 +422,9 @@ img{
     &__flex{
         width: 100%;
         margin-bottom: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     &__category{
@@ -406,9 +436,7 @@ img{
     }
 
     &__title{
-        font-size: rem(20);
-        margin-top: 0.2em;
-        margin-left: 0.5em;
+        font-size: rem(30);
     }
 
     &__period{
@@ -421,10 +449,20 @@ img{
         font-size: rem(12);
         margin-top: 0.2em;
         margin-left: 0.5em;
+        @include pc {
+            font-size: rem(14);
+        }
     }
 
     &__intention{
         margin-top: (40px/16px)+em;
+    }
+
+    &__code{
+        @include pc {
+            margin-right: 2em;
+            margin-left: 2em;
+        }
     }
 
     &__text{
@@ -443,7 +481,11 @@ img{
         display: block;
         margin-bottom: 2em;
         text-decoration: none;
-        color: #000;
+        color: #F0841A;
+        font-weight: bold;
+        @include pc {
+            margin-left: 2em;
+        }
         &:before{
                 content: "";
                 display: inline-block;

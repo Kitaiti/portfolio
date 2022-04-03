@@ -8,14 +8,14 @@ img {
 }
 
 .inner {
-  width: 80%;
+  width: 70%;
   max-width: 450px;
   margin: auto;
 }
 
 @media (min-width: 750px) {
   .inner {
-    width: 70%;
+    width: 80%;
     max-width: 1920px;
     margin: auto;
   }
@@ -415,14 +415,49 @@ img {
 
 @media (min-width: 750px) {
   .work__detail {
-    padding: 2em;
-    width: 40%;
+    padding: 1.2em;
+    width: 44%;
   }
+}
+
+.work__link {
+  margin-top: 0.9375em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.work__page {
+  border: 2px solid #4CACB9;
+  padding: 0.5em;
+  border-radius: 7px;
+}
+
+.work__here {
+  text-decoration: none;
+  font-size: 0.8125rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.work__git {
+  text-decoration: none;
+  font-size: 0.8125rem;
+  color: #333;
+  font-weight: bold;
 }
 
 @media (min-width: 750px) {
   .work__img {
-    width: 50%;
+    width: 47%;
   }
 }
 
@@ -447,6 +482,17 @@ img {
 .work__flex {
   width: 100%;
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .work__category {
@@ -461,9 +507,7 @@ img {
 }
 
 .work__title {
-  font-size: 1.25rem;
-  margin-top: 0.2em;
-  margin-left: 0.5em;
+  font-size: 1.875rem;
 }
 
 .work__period {
@@ -478,8 +522,21 @@ img {
   margin-left: 0.5em;
 }
 
+@media (min-width: 750px) {
+  .work__techno {
+    font-size: 0.875rem;
+  }
+}
+
 .work__intention {
   margin-top: 2.5em;
+}
+
+@media (min-width: 750px) {
+  .work__code {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
 }
 
 .work__text {
@@ -501,7 +558,14 @@ img {
   display: block;
   margin-bottom: 2em;
   text-decoration: none;
-  color: #000;
+  color: #F0841A;
+  font-weight: bold;
+}
+
+@media (min-width: 750px) {
+  .work__back {
+    margin-left: 2em;
+  }
 }
 
 .work__back:before {
