@@ -536,26 +536,16 @@ img {
   margin-top: 2.5em;
 }
 
-@media (min-width: 750px) {
-  .work__code {
-    margin-right: 3em;
-    margin-left: 3em;
-  }
-}
-
 .work__text {
   margin-bottom: 1.25em;
 }
 
-@media (min-width: 750px) {
-  .work__text {
-    margin-right: 3em;
-    margin-left: 3em;
-  }
-}
-
 .work__code {
   margin-bottom: 1.25em;
+}
+
+.work__img {
+  display: block;
 }
 
 .work__back {
@@ -564,12 +554,6 @@ img {
   text-decoration: none;
   color: #F0841A;
   font-weight: bold;
-}
-
-@media (min-width: 750px) {
-  .work__back {
-    margin-left: 3em;
-  }
 }
 
 .work__back:before {
