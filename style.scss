@@ -478,6 +478,10 @@ img{
         margin-bottom: (20px/16px)+em;
     }
 
+    &__img{
+        display: block;
+    }
+
     &__back{
         display: block;
         margin-bottom: 2em;
