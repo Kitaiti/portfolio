@@ -15,7 +15,7 @@ img {
 
 @media (min-width: 750px) {
   .inner {
-    width: 80%;
+    width: 70%;
     max-width: 1920px;
     margin: auto;
   }
@@ -31,7 +31,7 @@ img {
   text-align: center;
   background-color: #F0841A;
   margin: auto;
-  padding: 1em;
+  padding: 3em;
 }
 
 @media (min-width: 750px) {
@@ -41,7 +41,7 @@ img {
 }
 
 .header__title {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 750px) {
@@ -396,8 +396,35 @@ img {
 .title {
   font-size: 1.5rem;
   color: #F0841A;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
   margin-top: 1em;
+  display: inline-block;
+  background-color: #FDEFCD;
+  border-left: #4CACB9 10px solid;
+  padding: 0.1em 0.4em 0.1em 0.5em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.4em;
+  text-align: center;
+  width: 40%;
+  display: block;
+  border-top: #4CACB9 dashed 3px;
+  border-bottom: #4CACB9 dashed 3px;
+}
+
+@media (min-width: 750px) {
+  .subtitle {
+    margin-top: 1em;
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    width: 20%;
+    display: block;
+    border-top: #4CACB9 dashed 3px;
+    border-bottom: #4CACB9 dashed 3px;
+  }
 }
 
 .work {
@@ -461,7 +488,7 @@ img {
 
 @media (min-width: 750px) {
   .work__img {
-    width: 47%;
+    width: 50%;
   }
 }
 
@@ -516,15 +543,13 @@ img {
 }
 
 .work__period {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   margin-top: 0.2em;
-  margin-left: 0.5em;
 }
 
 .work__techno {
   font-size: 0.75rem;
   margin-top: 0.2em;
-  margin-left: 0.5em;
 }
 
 @media (min-width: 750px) {
@@ -538,14 +563,14 @@ img {
 }
 
 .work__text {
-  margin-bottom: 0.5em;
+  text-align: left;
+  margin-bottom: 1.25rem;
+  line-height: 1.5em;
 }
 
 @media (min-width: 750px) {
   .work__text {
-    width: 90%;
-    line-height: 2em;
-    margin-left: 1em;
+    line-height: 1.875em;
   }
 }
 
@@ -553,15 +578,12 @@ img {
   margin-bottom: 1.25em;
 }
 
-@media (min-width: 750px) {
-  .work__code {
-    width: 90%;
-    margin-left: 1em;
-  }
-}
-
 .work__img {
   display: block;
+}
+
+.work__miro {
+  margin-bottom: 1.25rem;
 }
 
 .work__back {

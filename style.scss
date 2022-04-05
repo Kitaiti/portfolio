@@ -7,7 +7,7 @@ $pc: 750px;
 // }
 
 @function rem($value){
-    @return ($value/16)+rem;
+    @return ($value/16px)+rem;
 }
 
 @mixin pc {
@@ -33,7 +33,7 @@ img{
     margin: auto;
 
     @include pc {
-        width: 80%;
+        width: 70%;
         max-width: 1920px;
         margin: auto;
     }
@@ -51,16 +51,16 @@ img{
         text-align: center;
         background-color: #F0841A;
         margin: auto;
-        padding: 1em;
+        padding: 3em;
         @include pc {
             padding: (32/16)+em;
         }
     }
 
     &__title{
-        font-size: rem(30);
+        font-size: rem(40px);
         @include pc {
-           font-size: rem(60); 
+           font-size: rem(60px); 
         }
     }
 
@@ -75,11 +75,11 @@ img{
     margin-top: (30em/16);
 
     &__title{
-        font-size:rem(20);
+        font-size:rem(20px);
         text-align: center;
         color: #F0841A;
         @include pc {
-            font-size: rem(25);
+            font-size: rem(25px);
         }
     }
 
@@ -94,7 +94,7 @@ img{
 .works{
     text-align: center;
     &__title{
-        font-size: rem(20);
+        font-size: rem(20px);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -104,7 +104,7 @@ img{
         margin:0;
         padding:0;
         @include pc {
-            font-size: rem(22);
+            font-size: rem(22px);
         }
     }
 
@@ -177,7 +177,7 @@ img{
     text-align: center;
 
     &__title{
-        font-size: rem(20);
+        font-size: rem(20px);
         color: #F0841A;
     }
 }
@@ -207,11 +207,11 @@ img{
 
     &__text{
         font-weight: normal;
-        font-size: rem(16);
+        font-size: rem(16px);
         margin-bottom: (10/16)+em;
         @include pc {
             margin-bottom: 0;
-            font-size: rem(20);
+            font-size: rem(20px);
         }
     }
 
@@ -247,11 +247,11 @@ img{
 
     &__text{
         font-weight: normal;
-        font-size: rem(16);
+        font-size: rem(16px);
         margin-bottom: (10/16)+em;
         @include pc {
             margin-bottom: 0;
-            font-size: rem(20);
+            font-size: rem(20px);
         }
     }
 
@@ -271,7 +271,7 @@ img{
 
 .about{
     &__title{
-        font-size: rem(20);
+        font-size: rem(20px);
         color: #F0841A;
         text-align: center;
         margin-bottom: 2em;
@@ -306,7 +306,7 @@ img{
         margin-top: 0;
     }
     &__title{
-        font-size: rem(24);
+        font-size: rem(24px);
         padding-bottom: 0.3em;
         border-bottom: #4CACB9 4px solid;
         margin-bottom: 1.2em;
@@ -317,11 +317,11 @@ img{
     }
 
     &__name{
-        font-size: rem(16);
+        font-size: rem(16px);
     }
 
     &__text{
-        font-size: rem(13);
+        font-size: rem(13px);
         padding-left: 3.5em;
     }
 
@@ -356,10 +356,35 @@ img{
 
 // title
 .title{
-    font-size: rem(24);
+    font-size: rem(24px);
     color: #F0841A;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.6em;
     margin-top: 1em;
+    display: inline-block;
+    background-color: #FDEFCD;
+    border-left: #4CACB9 10px solid;
+    padding: 0.1em 0.4em 0.1em 0.5em;
+}
+
+// subtitle
+.subtitle{
+    font-size: rem(20px);
+    margin-bottom: 0.4em;
+    text-align: center;
+    width: 40%;
+    display: block;
+    border-top: #4CACB9 dashed 3px;
+    border-bottom: #4CACB9 dashed 3px;
+    @include pc {
+        margin-top: 1em;
+        font-size: rem(20px);
+        margin-bottom: 0.5em;
+        text-align: center;
+        width: 20%;
+        display: block;
+        border-top: #4CACB9 dashed 3px;
+        border-bottom: #4CACB9 dashed 3px;
+    }
 }
 
 // WORK
@@ -392,14 +417,14 @@ img{
 
     &__here{
         text-decoration: none;
-        font-size: rem(13);
+        font-size: rem(13px);
         color: #333;
         font-weight: bold;
     }
 
     &__git{
         text-decoration: none;
-        font-size: rem(13);
+        font-size: rem(13px);
         color: #333;
         font-weight: bold;
     }
@@ -407,7 +432,7 @@ img{
     &__img{
         width: 100%;
         @include pc {
-            width: 47%;
+            width: 50%;
         }
     }
 
@@ -430,7 +455,7 @@ img{
     }
 
     &__category{
-        font-size: rem(12);
+        font-size: rem(12px);
         width: 60px;
         @include pc {
             width: 70px;
@@ -438,21 +463,19 @@ img{
     }
 
     &__title{
-        font-size: rem(30);
+        font-size: rem(30px);
     }
 
     &__period{
-        font-size: rem(13);
+        font-size: rem(15px);
         margin-top: 0.2em;
-        margin-left: 0.5em;
     }
 
     &__techno{
-        font-size: rem(12);
+        font-size: rem(12px);
         margin-top: 0.2em;
-        margin-left: 0.5em;
         @include pc {
-            font-size: rem(14);
+            font-size: rem(14px);
         }
     }
 
@@ -461,24 +484,24 @@ img{
     }
 
     &__text{
-        margin-bottom:0.5em;
+        text-align: left;
+        margin-bottom:rem(20px);
+        line-height: 1.5em;
         @include pc {
-            width: 90%;
-            line-height: 2em;
-            margin-left: 1em;
+            line-height: (30px/16px)+em;
         }
     }
 
     &__code{
         margin-bottom: (20px/16px)+em;
-        @include pc {
-            width: 90%;
-            margin-left: 1em;
-        }
     }
 
     &__img{
         display: block;
+    }
+
+    &__miro{
+            margin-bottom:rem(20px);
     }
 
     &__back{
