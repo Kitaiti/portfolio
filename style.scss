@@ -18,8 +18,9 @@ $pc: 750px;
 
 
 body{
-    font-family:Helvetica, Arial, sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     font-size: 16px;
+    color: #3c3c3c;
 }
 
 
@@ -43,7 +44,7 @@ img{
 .header{
     &__top{
         text-decoration: none;
-        color: #000;
+        color: #3c3c3c;
     }
 
     &__main{
@@ -182,44 +183,7 @@ img{
     }
 }
 
-.skill{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: (50/16)+em;
-    @include pc {
-        display: none;
-    }
-    &__main{
-        margin-top: (20/16)+em;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding: (20/16)+em;
-        border: #4CACB9 2px solid;
-        border-radius: 10px;
-        @include pc {
-            display: block;
-        }
-    }
 
-    &__text{
-        font-weight: normal;
-        font-size: rem(16px);
-        margin-bottom: (10/16)+em;
-        @include pc {
-            margin-bottom: 0;
-            font-size: rem(20px);
-        }
-    }
-
-    &__text:last-child{
-        margin-bottom: 0;
-    }
-    
-}
 
 .pc{
     width: 70%;
@@ -270,6 +234,16 @@ img{
 // about
 
 .about{
+    overflow: hidden;
+    @include pc {
+        width: 80%;
+        margin: auto;
+        overflow: visible;
+    }
+
+    &__main{
+        display: block;
+    }
     &__title{
         font-size: rem(20px);
         color: #F0841A;
@@ -278,38 +252,62 @@ img{
     }
 
     &__img{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         @include pc {
-            width: 20%;
-            margin-right: -2em;
+            width: 40%;
+            margin: auto;
         }
     }
 
-    &__main{
+    &__box{
         width: 100%;
+        margin-top: (60/16)+em;
         @include pc {
             display: flex;
             justify-content: space-between;
         }
     }
 
-
 }
 
 .profile{
     width: 70%;
     margin: 0 auto;
-    margin-top: 6em;
+    margin-top: 2em;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 270px;
+        opacity: 0.3;
+        width: 200px;
+        height: 200px;
+        top: 80px;
+        background-image: url("/img/icon.png");
+        @include pc {
+            left: 200px;
+            width: 300px;
+            height: 300px;
+            top: 290px;
+        }
+    }
     @include pc {
-        width: 30%;
+        width: 40%;
         margin-top: 0;
     }
     &__title{
+        width: 200px;
         font-size: rem(24px);
         padding-bottom: 0.3em;
         border-bottom: #4CACB9 4px solid;
-        margin-bottom: 1.2em;
+        margin-bottom: 0.6em;
+        @include pc {
+            font-size: rem(30px);
+        }
     }
 
     &__main{
@@ -317,30 +315,183 @@ img{
     }
 
     &__name{
-        font-size: rem(16px);
+        width: 70px;
+        font-size: rem(18px);
+        @include pc {
+            font-size: rem(20px);
+        }
     }
 
     &__text{
-        font-size: rem(13px);
-        padding-left: 3.5em;
+        font-size: rem(16px);
+        // padding-left: 2%;
+        @include pc{
+            font-size: rem(18px);
+            padding-left: 3%;
+        }
     }
 
     &__flex{
         width: 100%;
         display: flex;
-        margin-top: 0.5em;
-    }
-
-    &__about{
-        margin-top: 2em;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
         text-align: left;
-        margin-bottom: 3em;
-    }
-
-    &__p{
-        line-height: 1.7;
+        margin-bottom: (20/16)+em;
     }
 }
+
+.skill{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-top: (32/16)+em;
+    margin-bottom: (40/16)+em;
+    @include pc {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: (60/16)+em;
+    }
+    &__title{
+        width: 200px;
+        font-size: rem(24px);
+        padding-bottom: 0.3em;
+        border-bottom: #4CACB9 4px solid;
+        margin-bottom: 0.5em;
+        @include pc {
+            font-size: rem(30px);
+        }
+    }
+
+    &__main{
+        @include pc {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+    }
+
+    &__lang{
+        width: 100%;
+        @include pc {
+            width: 50%;
+        }
+    }
+
+    &__tool{
+        width: 60%;
+        @include pc {
+            width: 30%;
+            margin-left: 5%;
+        }
+    }
+}
+
+.person{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: (40/16)+em;
+    @include pc {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: (60/16)+em;
+    }
+    &__title{
+        color: #F0841A;
+        font-size: rem(30px);
+        margin-bottom: (14/16)+em;
+    }
+    
+    &__text{
+        font-size: rem(16px);
+        margin-bottom: (16/20)+em;
+        line-height: (22/16)+em;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+
+        @include pc {
+            line-height: (26/16)+em;
+        }
+    }
+}
+
+.carrer{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: (60/16)+em;
+    @include pc {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: (60/16)+em;
+    }
+    &__title{
+        color: #F0841A;
+        font-size: rem(30px);
+        margin-bottom: (16/28)+em;
+    }
+}
+// timeline
+.timeline {
+    list-style: none;
+    &__text{
+        @include pc {
+            padding-bottom: 1em;
+        }
+    }
+    &__date{
+        @include pc {
+            width: 110px;
+            float: left;
+            margin-top: 20px;
+        }
+    }
+    &__content{
+        @include pc {
+            width: 75%;
+            float: left;
+            border-left: 3px #4CACB9 solid;
+            padding-left: 30px;
+            padding-top: 15px;
+            &:before{
+                content: '';
+                width: 20px;
+                height: 20px;
+                background: #F0841A;
+                position: absolute;
+                left: 101px;
+                top: 19px;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &__title{
+        @include pc {
+            margin-bottom: 0.3em;
+            font-size: rem(20px);
+        }
+    }
+
+    &__list{
+        margin-bottom: 0;
+    }
+  }
+
+.timeline > li {
+    margin-bottom: 60px;
+    @include pc {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+  }
+
 
 // footer
 .footer{
@@ -488,6 +639,9 @@ img{
         margin-bottom:rem(20px);
         line-height: 1.5em;
         @include pc {
+            width: 75%;
+            max-width: 40em;
+            margin-right: auto;
             line-height: (30px/16px)+em;
         }
     }
