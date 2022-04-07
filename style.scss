@@ -181,6 +181,11 @@ img{
         font-size: rem(40px);
         @include pc {
            font-size: rem(60px); 
+           display: inline-block;
+           transition: .3s;
+           &:hover{
+               transform: rotate(-5deg);
+           }
         }
     }
 

@@ -178,6 +178,13 @@ img {
 @media (min-width: 750px) {
   .header__title {
     font-size: 3.75rem;
+    display: inline-block;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .header__title:hover {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
 }
 
