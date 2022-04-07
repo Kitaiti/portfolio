@@ -25,10 +25,10 @@ img {
 .hamburger {
   display: none;
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 3;
-  right: 13px;
-  top: 12px;
+  top: 6%;
+  left: 80%;
   width: 42px;
   height: 42px;
   cursor: pointer;
@@ -48,7 +48,6 @@ img {
 .hamburger.active span:nth-child(1) {
   top: 16px;
   left: 6px;
-  background: #fff;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
 }
@@ -93,18 +92,15 @@ img {
 .menu {
   height: 100%;
   text-align: center;
-  padding-top: 10em;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   color: #000;
-  background: rgba(76, 172, 185, 0.8);
   text-align: center;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   width: 100%;
-  opacity: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -121,7 +117,7 @@ img {
 }
 
 .menu__main {
-  background-color: #ccc;
+  background-color: #4CACB9;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -152,6 +148,7 @@ img {
 }
 
 .header {
+  position: relative;
   background: var(--background-navbar);
 }
 
@@ -489,7 +486,7 @@ img {
 
 .about__box {
   width: 100%;
-  margin-top: 3.75em;
+  margin-top: 1.75em;
 }
 
 @media (min-width: 750px) {
@@ -561,7 +558,7 @@ img {
 }
 
 .profile__name {
-  width: 70px;
+  width: 80px;
   font-size: 1.125rem;
 }
 
@@ -871,6 +868,18 @@ img {
   }
 }
 
+.work__design {
+  display: block;
+  width: 80%;
+}
+
+.work__caption {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #4CACB9;
+}
+
 .work__link {
   margin-top: 0.9375em;
   display: -webkit-box;
@@ -963,7 +972,13 @@ img {
 }
 
 .work__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 750px) {
+  .work__title {
+    font-size: 1.875rem;
+  }
 }
 
 .work__period {
