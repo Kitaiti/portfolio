@@ -9,7 +9,7 @@ img {
 }
 
 .inner {
-  width: 82%;
+  width: 85%;
   max-width: 450px;
   margin: auto;
 }
@@ -117,7 +117,7 @@ img {
 }
 
 .menu__main {
-  background-color: #4CACB9;
+  background-color: #FFD08A;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -503,7 +503,7 @@ img {
 }
 
 .profile {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   margin-top: 2em;
   position: relative;
@@ -601,7 +601,7 @@ img {
 }
 
 .skill {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   margin-top: 2em;
   margin-top: 2em;
@@ -671,7 +671,7 @@ img {
 }
 
 .person {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   margin-bottom: 2.5em;
 }
@@ -708,7 +708,7 @@ img {
 }
 
 .carrer {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   margin-bottom: 3.75em;
 }
@@ -1086,7 +1086,7 @@ img {
 }
 
 .twitter {
-  width: 70%;
+  width: 85%;
   margin: auto;
 }
 
