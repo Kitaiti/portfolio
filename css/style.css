@@ -1155,6 +1155,7 @@ img {
             animation: Slidein 1.6s;
     -webkit-transition: .5s;
     transition: .5s;
+    opacity: 0;
   }
   .twitter__main.show {
     opacity: 1;

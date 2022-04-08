@@ -949,6 +949,7 @@ img{
             margin-left: 10%;
             animation: Slidein 1.6s;
             transition: .5s;
+            opacity: 0;
             &.show{
                 opacity: 1;
             }
