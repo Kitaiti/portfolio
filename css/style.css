@@ -803,10 +803,10 @@ img {
 
 .footer {
   background-color: #F0841A;
-  color: #333;
+  color: #FDEFCD;
   text-align: center;
-  padding-top: 0.125em;
-  padding-bottom: 0.125em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -1091,6 +1091,12 @@ img {
 }
 
 @media (min-width: 750px) {
+  .twitter__text {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 750px) {
   .twitter {
     width: 90%;
     margin-right: auto;
@@ -1101,7 +1107,7 @@ img {
 .twitter__title {
   color: #F0841A;
   font-size: 1.875rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.625em;
 }
 
 .twitter__main {
@@ -1121,10 +1127,64 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 750px) {
+  .twitter__box {
+    width: 50%;
+  }
+}
+
+.twitter__main {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 750px) {
+  .twitter__main {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 10%;
+    -webkit-animation: Slidein 1.6s;
+            animation: Slidein 1.6s;
+    opacity: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .twitter__main.show {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes Slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes Slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

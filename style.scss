@@ -673,10 +673,10 @@ img{
 // footer
 .footer{
     background-color: #F0841A;
-    color: #333;
+    color: #FDEFCD;
     text-align: center;
-    padding-top: (2/16)+em;
-    padding-bottom: (2/16)+em;
+    padding-top: (10/16)+em;
+    padding-bottom: (10/16)+em;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -902,6 +902,11 @@ img{
 .twitter{
     width: 70%;
     margin: auto;
+    &__text{
+        @include pc {
+            margin-bottom: 1em;
+        }
+    }
     @include pc {
         width: 90%;
         margin-right: auto;
@@ -910,7 +915,7 @@ img{
     &__title{
         color: #F0841A;
         font-size: rem(30px);
-        margin-bottom: (16/32)+em;
+        margin-bottom: (10/16)+em;
     }
 
     &__main{
@@ -924,7 +929,41 @@ img{
     &__flex{
         @include pc {
             display: flex;
-            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__box{
+        @include pc {
+            width: 50%;
+        }
+    }
+
+    &__main{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        @include pc {
+            width: 70%;
+            margin-top: 0;
+            margin-left: 10%;
+            animation: Slidein 1.6s;
+            opacity: 0;
+            transition: .5s;
+            &.show{
+                opacity: 1;
+            }
         }
     }
 }
+
+@keyframes Slidein{
+    0% {
+      opacity: 0;
+      transform: translateY(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
