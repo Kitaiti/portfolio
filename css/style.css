@@ -1153,7 +1153,6 @@ img {
     margin-left: 10%;
     -webkit-animation: Slidein 1.6s;
             animation: Slidein 1.6s;
-    opacity: 0;
     -webkit-transition: .5s;
     transition: .5s;
   }
