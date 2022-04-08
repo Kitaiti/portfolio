@@ -520,7 +520,7 @@ img {
   width: 200px;
   height: 200px;
   top: 80px;
-  background-image: url("/img/icon.png");
+  background-image: url("../img/icon.png");
 }
 
 @media (min-width: 750px) {
