@@ -28,12 +28,14 @@ for (var i = 0; i < fadeContsRect.length; i++) {
 // ウィンドウがリサイズされたら、ウィンドウの高さを再取得
 window.addEventListener('resize', function () {
   windowH = window.innerHeight;
+  console.log(windowH);
 });
 
 // スクロールされたら
 window.addEventListener('scroll', function () {
   // スクロール位置を取得
   windowY = window.pageYOffset;
+  console.log(windowY);
   
   for (var i = 0; i < fadeConts.length; i++) {
     // 要素が画面の下端にかかったら
