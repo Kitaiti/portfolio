@@ -11,6 +11,7 @@ $(function() {
 });
 
 var fadeConts = document.querySelectorAll('.twitter__main'); // フェードさせる要素の取得
+console.log(fadeConts)
 var fadeContsRect = []; // 要素の位置を取得するための配列
 var fadeContsTop = []; // 要素の位置を取得するための配列
 var windowY = window.pageYOffset; // ウィンドウのスクロール位置
@@ -42,9 +43,17 @@ window.addEventListener('scroll', function () {
     if(windowY > fadeContsTop[i] - windowH + remainder) {
       // .showを付与
       fadeConts[i].classList.add('show');
-    } else {
-      // 逆に.showを削除
-      fadeConts[i].classList.remove('show');
     }
   }
 });
+
+
+// プロフィール画像
+let profimg = document.querySelector(".about__img");
+console.log(profimg);
+
+window.addEventListener("load",function(){
+  profimg.setAttribute("class" ,"return about__img")
+})
+
+
