@@ -477,7 +477,7 @@ img{
             opacity: 1;
         }
         @include pc {
-            width: 40%;
+            width: 45%;
             margin: auto;
         }
     }
@@ -504,17 +504,16 @@ img{
         display: inline-block;
         background-size: contain;
         background-repeat: no-repeat;
-        left: 270px;
-        opacity: 0.3;
-        width: 200px;
-        height: 200px;
-        top: 80px;
+        left: 70%;
+        opacity: 0.2;
+        width: 50%;
+        height: 50%;
+        top: 200px;
         background-image: url("../img/icon.png");
         @include pc {
-            left: 200px;
-            width: 300px;
-            height: 300px;
-            top: 300px;
+            left: 40%;
+            width: 60%;
+            top: 60%;
         }
     }
     @include pc {
@@ -1042,7 +1041,7 @@ img{
   @keyframes Slideleft {
       0%{
           opacity: 0;
-          transform: translateX(-64px);
+          transform: translateX(-100px);
       }
 
       100%{

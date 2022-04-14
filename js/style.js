@@ -53,7 +53,7 @@ let profimg = document.querySelector(".about__img");
 console.log(profimg);
 
 window.addEventListener("load",function(){
-  profimg.setAttribute("class" ,"return about__img")
+  profimg.setAttribute("class" ,"return about__img");
 })
 
 
