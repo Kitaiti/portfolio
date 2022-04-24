@@ -939,6 +939,8 @@ img {
   .work__detail {
     padding: 1.2em;
     width: 60%;
+    margin: 0 auto;
+    margin-top: 2em;
   }
 }
 
