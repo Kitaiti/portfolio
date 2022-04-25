@@ -57,3 +57,29 @@ window.addEventListener("load",function(){
 })
 
 
+// マウスカーソル
+$(function(){
+
+  let cursor = $(".cursor");
+
+  $(document).on("mousemove",function(e){
+    let x = e.pageX + 10;
+    let y = e.pageY + 15;
+
+    cursor.css({
+      "top" : y + "px",
+      "left" : x + "px",
+      "opacity" : "0.7"
+    })
+  })
+
+  $(".header__list").hover(
+    function(){
+      cursor.addClass("active");
+    },function(){
+      cursor.removeClass("active");
+    }
+  )
+});
+
+

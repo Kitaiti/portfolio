@@ -28,6 +28,8 @@ body{
     font-family: Helvetica,Arial,sans-serif;
     font-size: 16px;
     color: #3c3c3c;
+    position: relative;
+    cursor: none;
 }
 
 
@@ -47,6 +49,26 @@ img{
     }
 }
 
+a{
+    cursor: none;
+}
+
+// cursor
+.cursor{
+    position: fixed;
+    background: #4CACB9;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: -20px 0 0 -20px;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
 
 // humberger menu
 .hamburger {
