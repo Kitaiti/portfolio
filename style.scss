@@ -29,7 +29,6 @@ body{
     font-size: 16px;
     color: #3c3c3c;
     position: relative;
-    cursor: none;
 }
 
 
@@ -49,26 +48,7 @@ img{
     }
 }
 
-a{
-    cursor: none;
-}
 
-// cursor
-.cursor{
-    position: fixed;
-    background: #4CACB9;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    margin: -20px 0 0 -20px;
-    z-index: 2;
-    pointer-events: none;
-    opacity: 0;
-}
-
-.active {
-    opacity: 1;
-}
 
 // humberger menu
 .hamburger {
@@ -243,24 +223,24 @@ a{
             display: inline-block;
             text-decoration: none;
         }
-        &:after{
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background: #FDEFCD;
-            transform: scale(0, 1);
-            transform-origin: center top;
-            transition: transform .3s;
-        }
-        &:hover{
-            &:after{
-                transform: scale(1, 1);
-            }
-        }
+        // &:after{
+        //     position: absolute;
+        //     bottom: -4px;
+        //     left: 0;
+        //     content: '';
+        //     width: 100%;
+        //     height: 4px;
+        //     border-radius: 2px;
+        //     background: #FDEFCD;
+        //     transform: scale(0, 1);
+        //     transform-origin: center top;
+        //     transition: transform .3s;
+        // }
+        // &:hover{
+        //     &:after{
+        //         transform: scale(1, 1);
+        //     }
+        // }
         text-decoration: none;
         color: #FFD08A;
         font-weight: bold;
