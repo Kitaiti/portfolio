@@ -5,6 +5,10 @@ body {
   position: relative;
 }
 
+html, body, a {
+  cursor: none;
+}
+
 img {
   width: 100%;
 }
@@ -1112,12 +1116,6 @@ img {
   margin-bottom: 1.25rem;
 }
 
-@media (min-width: 750px) {
-  .work__miro {
-    width: 80%;
-  }
-}
-
 .work__back {
   display: block;
   margin-bottom: 2em;
@@ -1245,6 +1243,36 @@ img {
     margin-top: 0;
     margin-left: 10%;
   }
+}
+
+.mail {
+  display: inline-block;
+  text-decoration: none;
+  color: #F0841A;
+}
+
+.cursor {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  pointer-events: none;
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #4cacb9;
+  border-radius: 50%;
+  z-index: 999;
+  -webkit-transition: width .3s, height .3s, top .3s, left .3s;
+  transition: width .3s, height .3s, top .3s, left .3s;
+}
+
+.cursor.hov_ {
+  top: -12px;
+  left: -12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 227, 186, 0.7);
 }
 
 @-webkit-keyframes Slidein {
