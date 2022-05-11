@@ -825,7 +825,7 @@ img{
     &__shopping{
         margin-bottom: 2rem;
         @include pc() {
-            margin-top: -1rem;
+            // margin-top: -1rem;
             display: block;
             width: 55%;
             margin-bottom: 2rem;
