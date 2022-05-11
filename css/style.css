@@ -930,6 +930,20 @@ img {
   width: 80%;
 }
 
+.work__shopping {
+  margin-top: -1rem;
+  display: block;
+  width: 55%;
+  margin-bottom: 2rem;
+}
+
+.work__traveld {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .work__caption {
   font-size: 0.875rem;
   margin-bottom: 0;
