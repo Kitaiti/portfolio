@@ -397,6 +397,20 @@ img{
     }
 }
 
+// design
+.design{
+    @include pc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img{
+        @include pc {
+            width: 22%;
+        }
+    }
+}
+
 // btn
 .btn{
     margin-right: auto;

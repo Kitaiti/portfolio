@@ -442,6 +442,25 @@ img {
   }
 }
 
+@media (min-width: 750px) {
+  .design {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 750px) {
+  .design__img {
+    width: 22%;
+  }
+}
+
 .btn {
   margin-right: auto;
   margin-left: auto;
