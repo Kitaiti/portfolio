@@ -876,6 +876,7 @@ img {
   border-left: #4CACB9 10px solid;
   padding: 0.1em 0.4em 0.1em 0.5em;
   clear: both;
+  margin-bottom: 0.2em;
 }
 
 .subtitle {
@@ -883,26 +884,19 @@ img {
   margin-bottom: 0.5em;
   text-align: left;
   clear: both;
-  display: inline;
-  width: 60%;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  border-top: #4CACB9 dashed 3px;
-  border-bottom: #4CACB9 dashed 3px;
+  display: block;
+  width: 35%;
+  padding-bottom: 0.2em;
+  border-bottom: 3px dashed #4CACB9;
 }
 
 @media (min-width: 750px) {
   .subtitle {
-    margin-top: 1em;
-    display: inline-block;
-    font-size: 1.25rem;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
+    display: block;
+    font-size: 1.125rem;
     text-align: left;
     width: 30%;
-    display: inline;
-    border-top: #4CACB9 dashed 3px;
-    border-bottom: #4CACB9 dashed 3px;
+    display: block;
   }
 }
 
@@ -1140,8 +1134,7 @@ img {
 
 .work__text {
   text-align: left;
-  margin-top: 1.2em;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.9375rem;
   line-height: 1.7em;
 }
 
@@ -1191,6 +1184,12 @@ img {
   margin-bottom: 4px;
   margin-left: 0.2em;
   width: 1em;
+}
+
+.work__blog {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .twitter {
