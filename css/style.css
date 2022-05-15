@@ -415,6 +415,33 @@ img {
   }
 }
 
+.responsive__box {
+  margin-top: 1em;
+}
+
+@media (min-width: 750px) {
+  .responsive__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.responsive__img {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 750px) {
+  .responsive__img {
+    width: 32%;
+  }
+}
+
 .btn {
   margin-right: auto;
   margin-left: auto;
