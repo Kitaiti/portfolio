@@ -391,6 +391,30 @@ img {
   }
 }
 
+@media (min-width: 750px) {
+  .blog__box {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-bottom: 0.4em;
+  }
+}
+
+.blog__img {
+  margin-bottom: 0.3em;
+}
+
+@media (min-width: 750px) {
+  .blog__img {
+    width: 50%;
+  }
+}
+
 .btn {
   margin-right: auto;
   margin-left: auto;

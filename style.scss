@@ -361,7 +361,23 @@ img{
 }
 
 // BLOG
-
+.blog{
+        &__box{
+            @include pc {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 0.4em;
+            }
+        }
+    
+        &__img{
+            margin-bottom: 0.3em;
+            @include pc {
+                width: 50%;
+            }
+        }
+}
 
 // Web Design
 
