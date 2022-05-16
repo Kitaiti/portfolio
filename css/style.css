@@ -444,6 +444,7 @@ img {
 
 @media (min-width: 750px) {
   .design {
+    width: 90%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

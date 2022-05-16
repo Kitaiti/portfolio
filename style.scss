@@ -400,6 +400,7 @@ img{
 // design
 .design{
     @include pc {
+        width: 90%;
         display: flex;
         justify-content: space-between;
     }
